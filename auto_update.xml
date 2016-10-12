@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<updateConfig>
+    <application>
+        <!-- set update apk versionCode -->
+        <versionCode></versionCode>
+        <!-- set update apk versionName -->
+        <versionName></versionName>
+    </application>
+    <!-- update apk source url -->
+    <apkUrl></apkUrl>
+    <!-- is patch -->
+    <usePatch>false</usePatch>
+    <!-- update patch source url -->
+    <patchUrl></patchUrl>
+</updateConfig>

@@ -86,7 +86,7 @@ public class ApkPatchDownLoader {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-
+                saveCurrentFile(response, startsPoint);
             }
         });
     }

@@ -78,21 +78,30 @@ public class DownLoadTestActivity extends AppCompatActivity implements View.OnCl
     }
 
     @Override
-    public void onUpdate(long currentBytes, boolean isComplete) {
+    public void onUpdate(final long currentBytes, final boolean isComplete) {
         this.currentBytes = currentBytes + breakPoints;
-        this.isComplete = isComplete;
-        runOnUiThread(mUiRunnable);
+        mProgressBar.setProgress((int) (currentBytes + breakPoints) / 1024);
+//        this.isComplete = isComplete;
+//        runOnUiThread(mUiRunnable);
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+                if (isComplete)
+                    Toast.makeText(DownLoadTestActivity.this, "Complete", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
-    private Runnable mUiRunnable = new Runnable() {
-        @Override
-        public void run() {
-            mProgressBar.setProgress((int) (currentBytes + breakPoints) / 1024);
-            if (isComplete) {
-                Toast.makeText(DownLoadTestActivity.this, "Complete", Toast.LENGTH_SHORT).show();
-            }
-        }
-    };
+//    private Runnable mUiRunnable = new Runnable() {
+//        @Override
+//        public void run() {
+//            mProgressBar.setProgress((int) (currentBytes + breakPoints) / 1024);
+//            if (isComplete) {
+//                Toast.makeText(DownLoadTestActivity.this, "Complete", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//    };
 
 }

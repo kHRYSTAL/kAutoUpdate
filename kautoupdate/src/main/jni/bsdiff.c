@@ -38,12 +38,12 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bsdiff/bsdiff.c,v 1.1 2005/08/06 01:59:05
 #include "bzip2/bzlib.h"
 #include "jni.h"
 
-JNIEXPORT jint JNICALL Java_me_khrystal_kautoupdate_BsPatch_bspatch
+JNIEXPORT jint JNICALL Java_me_khrystal_kautoupdate_utils_BsPatch_bspatch
 		(JNIEnv *env, jclass cls,
 		 jstring old, jstring new, jstring patch){
 	int argc = 4;
 	char * argv[argc];
-	argv[0] = "kAutoUpdate";
+	argv[0] = "libmerge";
 	argv[1] = (char*) ((*env)->GetStringUTFChars(env, old, 0));
 	argv[2] = (char*) ((*env)->GetStringUTFChars(env, new, 0));
 	argv[3] = (char*) ((*env)->GetStringUTFChars(env, patch, 0));

@@ -1,4 +1,4 @@
-package me.khrystal.kautoupdate;
+package me.khrystal.kautoupdate.utils;
 
 /**
  * usage:
@@ -11,7 +11,7 @@ package me.khrystal.kautoupdate;
 public class BsPatch {
 
     static {
-        System.loadLibrary("bsdiff");
+        System.loadLibrary("libmerge");
     }
 
     public static native int bspatch(String oldApkPath, String newApkPath, String patchPath);

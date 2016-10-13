@@ -1,4 +1,4 @@
-package me.khrystal.kautoupdate;
+package me.khrystal.kautoupdate.utils;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

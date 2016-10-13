@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<updateConfig>
-    <application>
-        <!-- set update apk versionCode -->
-        <versionCode></versionCode>
-        <!-- set update apk versionName -->
-        <versionName></versionName>
-    </application>
-    <!-- update apk source url -->
-    <apkUrl></apkUrl>
-    <!-- is patch -->
-    <usePatch>false</usePatch>
-    <!-- update patch source url -->
-    <patchUrl></patchUrl>
-</updateConfig>
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateResult>
+    <!-- boolean -->
+    <NewVersion value=""/>
+    <!-- file url -->
+    <FileUrl value=""/>
+    <!-- patch url -->
+    <PatchUrl value=""/>
+    <!-- server apk version code -->
+    <VersionCode value=""/>
+    <!-- server apk version name -->
+    <VersionName value=""/>
+    <!-- image -->
+    <UpdateImage value=""/>
+    <!-- description -->
+    <UpdateDespriation value=""/>
+    <!-- apk md5 -->
+    <MD5 value=""/>
+    <!-- server site -->
+    <Site value=""/>
+</UpdateResult>

@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 import java.io.File;
 
-import me.khrystal.kautoupdate.net.ApkPatchDownLoader;
-import me.khrystal.kautoupdate.net.ApkPatchResponseBody;
+import me.khrystal.update.net.ApkPatchDownLoader;
+import me.khrystal.update.net.ApkPatchResponseBody;
 import me.khrystal.kupdatedemo.R;
 
 /**
